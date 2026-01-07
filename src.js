@@ -9,5 +9,5 @@ export default function main() {
   const a = 41;
   const ll = 1;
   console.log(`Values: a = ${a}, ll = ${ll} all is ${a + ll}`);  
-  console.log('End of main function');
+  console.log('End of main function!');
 }
