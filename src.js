@@ -1,13 +1,35 @@
-export default function main() {
-  console.log('This is the main function in src.js');
-
-  const helper = () => {
-    console.log('This is a helper function');
-  };
-
-  helper();
-  const a = 41;
-  const ll = 1;
-  console.log(`Values: a = ${a}, ll = ${ll} all is ${a + ll}`);  
-  console.log('End of main function!');
+export default function greet(name) {
+    console.log(`please stand up, ${name}!`);
+    console.log(`welcome, ${name}!`);  
+    return `Hello, ${name}! Welcome aboard.`;
+}   
+export function farewell(name) {
+    console.log(`goodbye, ${name}!`);
+    return `Farewell, ${name}! See you next time.`;
+}
+export const PI = 3.14159;
+export const EULER = 2.71828;
+export function add(a, b) {
+    return a + b;
+}
+export function multiply(a, b) {
+    return a * b;
+}
+export class Calculator {
+    constructor() {
+        this.history = [];
+    }
+    add(a, b) {
+        const result = a + b;
+        this.history.push(`Added ${a} and ${b} to get ${result}`);
+        return result;
+    }
+    multiply(a, b) {
+        const result = a * b;
+        this.history.push(`Multiplied ${a} and ${b} to get ${result}`);
+        return result;
+    }
+    getHistory() {
+        return this.history;
+    }
 }
