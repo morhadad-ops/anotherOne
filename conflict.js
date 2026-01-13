@@ -6,7 +6,7 @@ const main = () => {
     const b = 5;
     const sum = a + b;      
     console.log(`The sum of a and b is: ${a + b}`);     
-    return sum;
+    return sum +1;
 };
 
 module.exports = main;
